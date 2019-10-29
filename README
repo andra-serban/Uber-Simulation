@@ -1,0 +1,36 @@
+Structuri folosite:
+struct driver:
++in aceasta structura am retinut informatii despre soferi:
+	-numele;
+	-numele intersectiei in care se afla si numarul asociat acesteia;
+	-stare: online/ offline;
+	-ratingul;
+	-numarul de curse;
+	-distanta parcursa;
+
+Task1:
+	-La citirea fiecarei intersectii am retinut si a cata intersectie citita a 
+	fost, adaugand intr-un dictionar numele si acest numar de ordine, dar 
+	pastrand informatia si intr-un vector pentru a obtine mai usor denumirea 
+	intersectiei in functie de numarul de ordine;
+	-Pentru a retine harta(intersectiile si conexiunile dintre acestea) am 
+	folosit un graf, stocand in fiecare nod intersectiile codifcate prin 
+	numerele de ordine.
+Task2:
+	-Pentru fiecare pereche de intersectii am afisat drumul minim
+Task3:
+	-In functie de querry am adaugat sau sters drumuri intre intersectii
+Task4:
+	-Am retinut numele fiecarui sofer precum si intersectia in care se afla 
+	intr-un alt dictionar;
+	-Pentru a retine toate informatiile despre sofer am folosit un vector de tip
+	driver
+	-Am retinut distantele minime dintre intersectile de care aveam nevoie 
+	intr-o matrice(min_path)
+	-La fiecare cursa am cautat soferul care se afla cel mai aproape, iar in 
+	cazul in care am gasit un sofer disponibil am verificat si daca se poate 
+	ajunge la destinatie, caz in care am actualizat pozitia soferului, ratingul 
+	si distanta parcursa.
+Task5:
+	-Am retinut intr-un vector doar intersectiile pentru care soferul avea 
+	suficient combustibil, iar apoi le am ordonat in functie de acesta.
